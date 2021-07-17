@@ -14,7 +14,7 @@
 	<artifactId>perform-manual-tests</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>perform-manual-tests</name>
-	<description>write test for all layers with junit and mockito</description>
+	<description>write test for all layers with junit aspectj and mockito</description>
 	<packaging>jar</packaging>
 	
 	<properties>

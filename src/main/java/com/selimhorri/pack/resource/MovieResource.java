@@ -51,6 +51,11 @@ public class MovieResource {
 		return new ResponseEntity<>(true, HttpStatus.OK);
 	}
 	
+	@GetMapping(value = {"/title/{title}"})
+	public ResponseEntity<Movie> findByTitleIgnoreCase(@PathVariable("title") final String title) {
+		return new ResponseEntity<>(this.movieService.findByTitleIgnoreCase(title), HttpStatus.OK);
+	}
+	
 	
 	
 }

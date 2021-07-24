@@ -11,5 +11,6 @@ public interface MovieService {
 	Movie save(final Movie movie);
 	Movie update(final Movie movie);
 	void deleteById(final Integer movieId);
+	Movie findByTitleIgnoreCase(final String title);
 	
 }

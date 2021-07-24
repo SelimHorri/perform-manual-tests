@@ -44,6 +44,11 @@ public class MovieServiceImpl implements MovieService {
 	public void deleteById(Integer movieId) {
 		this.movieRepository.delete(this.findById(movieId));
 	}
+
+	@Override
+	public Movie findByTitleIgnoreCase(final String title) {
+		return this.movieRepository.findByTitleIgnoreCase(title).orElseThrow(NoSuchElementException::new);
+	}
 	
 	
 	
